@@ -64,4 +64,4 @@ module.exports = {
         }
         return res.json(updatedCart);
     },
-}
+};
