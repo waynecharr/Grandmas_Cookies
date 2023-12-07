@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
-const cookieSchema = require('./Cookies');
+const cookieSchema = require('./Cookies').schema;
 
 const userSchema = new Schema(
   {
@@ -15,7 +15,7 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    // set savedBooks to be an array of data that adheres to the cookieSchema
+    // set savedCookies to be an array of data that adheres to the cookieSchema
     savedCookies: [cookieSchema],
   },
   // set this to use virtual below
@@ -43,7 +43,7 @@ userSchema.pre('save', async function (next) {
   
   // when we query a user, we'll also get another field called `cookieCount` with the number of saved books we have
   userSchema.virtual('cookieCount').get(function () {
-    return this.savedBooks.length;
+    return this.savedCookies.length;
   });
   
   const User = model('User', userSchema);
