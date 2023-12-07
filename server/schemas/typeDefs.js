@@ -1,39 +1,43 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
+
+    type User {
+        _id: ID!
+        email: String
+        password: String
+        cartTotal: Int
+        addCookie: [Cookies]
+    }
+
     type Query {
+        users: [User]
+        user(accountId: ID!): User
         me: User
+    }
+
+    input BuyCookie {
+        cookieId: String
+        cookieName: String
+        description: String
+        image: String
+        price: Float
     }
 
     type Mutation {
         addUser(email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
-        addCookie2Cart(): User
-        returnCookieFromCart(): User
-    }
-
-    type CookieInventory {
-        cookieId: ID
-        cookieName: String
-        description: String
-        image: String
-        link: String
-    }
-
-    type User {
-        _id: String
-        username: String
-        email: String
-        cookiesCart(newCookie: CookieInventory): [String]
-        removeCookies(returnCookie: CookieInventory)
+        addCookie(addToCart: BuyCookie!): User
+        deleteCookie(cookieId: ID!): User
     }
 
     type Cookies {
+        _id: ID
         cookieId: String
         cookieName: String
         description: String
         image: String
-        link: String
+        price: Float
     }
 
     type Auth {
