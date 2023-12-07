@@ -1,6 +1,6 @@
 const { Schema, Types } = require('mongoose');
 
-const cookieSchema = new Schema({
+const Cookies = new Schema({
     cookieId: {
       type: Schema.Types.ObjectId,
       default: () => new Types.ObjectId(),
