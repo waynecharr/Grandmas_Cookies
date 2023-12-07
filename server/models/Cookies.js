@@ -24,4 +24,4 @@ const cookieSchema = new Schema({
   });
    
   
-module.exports = cookieSchema; 
+module.exports = Cookies; 
