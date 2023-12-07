@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
-const cookieSchema = require('./Cookies');
+const Cookies = require('./Cookies');
 
 const userSchema = new Schema(
   {
@@ -16,7 +16,7 @@ const userSchema = new Schema(
       required: true,
     },
     // set savedBooks to be an array of data that adheres to the cookieSchema
-    savedCookies: [cookieSchema],
+    savedCookies: [Cookies],
   },
   // set this to use virtual below
   {
