@@ -1,6 +1,6 @@
-const { Schema, Types } = require('mongoose');
+const { Schema, Types, model } = require('mongoose');
 
-const Cookies = new Schema({
+const cookiesSchema = new Schema({
     cookieId: {
       type: Schema.Types.ObjectId,
       default: () => new Types.ObjectId(),
@@ -22,6 +22,7 @@ const Cookies = new Schema({
       min: 0,
     }
   });
+
+  const Cookies = model('Cookies', cookiesSchema);
    
-  
-module.exports = Cookies; 
+  module.exports = Cookies; 
