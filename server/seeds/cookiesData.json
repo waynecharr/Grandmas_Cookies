@@ -1,0 +1,56 @@
+[
+    {
+        "cookieName": "Chocolate Chip",
+        "description": "Indulge in Grandma's lovingly baked, classic chocolate chip cookies. Each bite oozing with chocolatey goodness.",
+        "image": "/assets/chocolate_chip_cookie.jpg",
+        "price": "10.99"
+    },
+    {
+        "cookieName": "Snickerdoodles",
+        "description": "Experience the perfect blend of cinnamon and sugar in Grandma's famous Snickerdoodle cookies. Soft, chewy, and utterly delightful.",
+        "image": "/assets/snickerdoodle_cookie.jpg",
+        "price": "12.99"
+    },
+    {
+        "cookieName": "Peanut Butter",
+        "description": "For peanut butter lovers, Grandma's Peanut Butter cookies are a dream come true. Packed with rich, nutty flavor in every bite.",
+        "image": "/assets/peanut_butter_cookie.jpg",
+        "price": "11.99"
+    },
+    {
+        "cookieName": "No Bake",
+        "description": "Sometimes Grandma's like easy bake's too! Her secret recipe is complete with a special ingredient: love <3. ",
+        "image": "/assets/no_bake_cookie.jpg",
+        "price": "9.99"
+    },
+    {
+        "cookieName": "Gingersnaps",
+        "description": "Spice up your day with Grandma's Gingersnap cookies. The perfect blend of ginger and sweetness in a crisp, flavorful treat.",
+        "image": "/assets/gingersnap_cookie.jpg",
+        "price": "10.99"
+    },
+    {
+        "cookieName": "Shortbread",
+        "description": "Simple yet sophisticated, Grandma's Shortbread cookies melt in your mouth with buttery goodness. A classic treat for any occasion.",
+        "image": "/assets/shortbread_cookie.jpg",
+        "price": "11.99"
+    },
+    {
+        "cookieName": "White Choco Macadamia Nut",
+        "description": "Indulge in luxury with Grandma's White Chocolate Macadamia Nut cookies. Creamy white chocolate meets crunchy macadamia nuts for a divine experience.",
+        "image": "/assets/white_choco_macadamia_cookie.jpg",
+        "price": "13.99"
+    },
+    {
+        "cookieName": "Italian Lemon Drop",
+        "description": "Brighten your day with the zesty delight of Grandma's Italian Lemon Drop cookies. Refreshing lemon flavor in a soft, delightful cookie.",
+        "image": "/assets/italian_lemon_drop_cookie.jpg",
+        "price": "12.99"
+    },
+    {
+        "cookieName": "Sugar Cookie",
+        "description": "Classic and sweet, Grandma's Sugar Cookies are a timeless favorite. Simple elegance in every bite, perfect for any occasion.",
+        "image": "/assets/sugar_cookie.jpg",
+        "price": "10.99"
+    }
+]
