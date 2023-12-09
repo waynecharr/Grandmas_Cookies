@@ -5,7 +5,7 @@ const {
   addCookie,
   deleteCookie,
   login,
-} = require('../../controllers/user-controller');
+} = require('../../controllers/user-controllers');
 
 // import middleware
 const { authMiddleware } = require('../../utils/auth');

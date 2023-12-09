@@ -52,5 +52,11 @@
         "description": "Classic and sweet, Grandma's Sugar Cookies are a timeless favorite. Simple elegance in every bite, perfect for any occasion.",
         "image": "/assets/sugar_cookie.jpg",
         "price": "10.99"
+    },
+    {
+        "cookieName": "Grandma's Surprise Mystery Box",
+        "description": "Grandma just loves surprises! Having trouble picking out which cookies you want? This Mystery Box comes with 10 hand-selected cookies of Grandma's choosing.",
+        "image": "/assets/sugar_cookie.jpg",
+        "price": "15.99"
     }
 ]
