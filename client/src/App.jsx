@@ -1,25 +1,42 @@
 import './App.css';
-import { extendedTheme, ChakraProvider } from '@chakra-ui/react';
-import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
+// import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
+import GrandmasPage from './pages/GrandmasPage';
+import AvailableCookies from './pages/AvailableCookies';
+import { ChakraProvider } from '@chakra-ui/react';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+  </React.StrictMode>,
+)
+
+/*
+TODO: may need to be commented back in or deleted
 const theme = extendedTheme({
   colors: {
-    // Pink
+    Pink
     100: '#ff85f3',
-    // White
+    White
     200: '#fff',
-    // Yellow
+    Yellow
     300: '#fcff9e',
   }
 })
+TODO: END
+*/
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
-      <ApolloClient client={client}>
-        
-      </ApolloClient>
+    <ChakraProvider>
+      {/* <ApolloClient client={client}> */}
+      <div className = "App">
+        <GrandmasPage/>
+        <AvailableCookies/>
+      </div>
+      {/* </ApolloClient> */}
     </ChakraProvider>
+    
 
   )
 }
