@@ -1,6 +1,7 @@
 import './App.css';
 // import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
 import GrandmasPage from './pages/GrandmasPage';
+import AvailableCookies from './pages/AvailableCookies';
 import { ChakraProvider } from '@chakra-ui/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -31,6 +32,7 @@ function App() {
       {/* <ApolloClient client={client}> */}
       <div className = "App">
         <GrandmasPage/>
+        <AvailableCookies/>
       </div>
       {/* </ApolloClient> */}
     </ChakraProvider>
