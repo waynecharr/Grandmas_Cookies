@@ -13,20 +13,20 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 // import { addCookieId } from '../utils/localStorage';
 // TODO: END
 
-function ChocChipCookies(){
+function SugarCookies(){
     return(
         <Card maxW='sm'>
   <CardBody>
     <Image
-      src='../../assets/choclateChipCookies.jpeg'
-      alt='Choclate Chip Cookies'
+      src='../../assets/SugarCookies.jpeg'
+      alt='Sugar Cookies'
       borderRadius='lg'
     />
     <Stack mt='6' spacing='3'>
-      <Heading size='md'>Choclate Chip Cookies
+      <Heading size='md'> Sugar Cookies
       <br></br>(12 count)</Heading>
       <Text>
-      Indulge in Grandma&apos;s lovingly baked, classic chocolate chip cookies. Each bite oozing with chocolatey goodness.
+      Classic and sweet, Grandma&apos;s Sugar Cookies are a timeless favorite. Simple elegance in every bite, perfect for any occasion.
       </Text>
       <Text color='blue.600' fontSize='2xl'>
         $10.99
@@ -50,4 +50,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </React.StrictMode>,
   )
 
- export default ChocChipCookies;
+ export default SugarCookies;

@@ -24,7 +24,7 @@ function Snickerdoodles(){
     />
     <Stack mt='6' spacing='3'>
       <Heading size='md'>Choclate Chip Cookies
-      <br></br>(One Dozen)</Heading>
+      <br></br>(12 count)</Heading>
       <Text>
       Experience the perfect blend of cinnamon and sugar in Grandma&aposa;s famous Snickerdoodle cookies. Soft, chewy, and utterly delightful.
       </Text>

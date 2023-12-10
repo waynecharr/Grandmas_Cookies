@@ -13,23 +13,23 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 // import { addCookieId } from '../utils/localStorage';
 // TODO: END
 
-function ChocChipCookies(){
+function MysteryBox(){
     return(
         <Card maxW='sm'>
   <CardBody>
     <Image
-      src='../../assets/choclateChipCookies.jpeg'
-      alt='Choclate Chip Cookies'
+      src='../../assets/cookieBox.jpeg'
+      alt='Cookie Mystery Box'
       borderRadius='lg'
     />
     <Stack mt='6' spacing='3'>
-      <Heading size='md'>Choclate Chip Cookies
-      <br></br>(12 count)</Heading>
+      <Heading size='md'>Grandma&apos;s Surprise Mystery Box⁉️
+      <br></br>(18 count)</Heading>
       <Text>
-      Indulge in Grandma&apos;s lovingly baked, classic chocolate chip cookies. Each bite oozing with chocolatey goodness.
+      Grandma just loves surprises! Having trouble picking out which cookies you want? This Mystery Box comes with 10 hand-selected cookies of Grandma&apos;s choosing.
       </Text>
       <Text color='blue.600' fontSize='2xl'>
-        $10.99
+        $15.99
       </Text>
     </Stack>
   </CardBody>
@@ -50,4 +50,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </React.StrictMode>,
   )
 
- export default ChocChipCookies;
+ export default MysteryBox;
