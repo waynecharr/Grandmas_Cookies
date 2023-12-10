@@ -3,16 +3,14 @@ import React from 'react';
 // import Auth from '../utils/auth';
 
 import ReactDOM from 'react-dom/client';
-
-
+import { Image } from '@chakra-ui/react'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
     </React.StrictMode>,
   )
 
-
-function Intro(){
+function GrandmasPage(){
     return (
         <div className="flex items-center
         justify-center flex-col text-center 
@@ -27,4 +25,10 @@ function Intro(){
     )
 }
 
-export default Intro;
+<Image
+  borderRadius='full'
+  boxSize='150px'
+  src='../assets/GrannyBio.jpg'
+  alt='Grandma'
+/>
+export default GrandmasPage;
