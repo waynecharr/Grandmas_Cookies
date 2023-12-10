@@ -13,23 +13,23 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 // import { addCookieId } from '../utils/localStorage';
 // TODO: END
 
-function NoBakeCookies(){
+function Snickerdoodles(){
     return(
-<Card maxW='sm'>
+        <Card maxW='sm'>
   <CardBody>
     <Image
-      src='../../assets/noBakeCookies.png'
-      alt='No Bake Cookies'
+      src='../../assets/snickerdoodles.jpeg'
+      alt='Snickerdoodles'
       borderRadius='lg'
     />
     <Stack mt='6' spacing='3'>
-      <Heading size='md'>No Bake Cookies 
+      <Heading size='md'>Choclate Chip Cookies
       <br></br>(One Dozen)</Heading>
       <Text>
-      Sometimes Grandma&apos;s like easy bake&apos;s too! Her secret recipe is complete with a special ingredient: love ❤️
+      Experience the perfect blend of cinnamon and sugar in Grandma&aposa;s famous Snickerdoodle cookies. Soft, chewy, and utterly delightful.
       </Text>
       <Text color='blue.600' fontSize='2xl'>
-        $9.99
+        $12.99
       </Text>
     </Stack>
   </CardBody>
@@ -50,4 +50,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </React.StrictMode>,
   )
 
- export default NoBakeCookies;
+ export default Snickerdoodles;
