@@ -1,5 +1,5 @@
 const { User, Cookies } = require('../models');
-const { signToken, AuthenticationError } = require('../utils/auth');
+const { signToken } = require('../utils/auth');
 // May not use this
 const { AuthenticationError } = require('apollo-server-express');
 
@@ -14,7 +14,7 @@ const resolvers = {
         },
     },
 
-    Mutations: {
+    Mutation: {
         addUser: async (parent, { email, password }) => {
             const user = await User.create({ email, password });
             const token = signToken(user);
