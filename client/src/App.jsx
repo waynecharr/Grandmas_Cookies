@@ -22,6 +22,7 @@ const theme = extendedTheme({
     300: '#fcff9e',
   }
 })
+TODO: END
 */
 
 function App() {
