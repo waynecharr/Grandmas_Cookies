@@ -13,23 +13,23 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 // import { addCookieId } from '../utils/localStorage';
 // TODO: END
 
-function ChocChipCookies(){
+function ItalianLemonDrop(){
     return(
         <Card maxW='sm'>
   <CardBody>
     <Image
-      src='../../assets/choclateChipCookies.jpeg'
-      alt='Choclate Chip Cookies'
+      src='../../assets/italianLemonDrop.jpeg'
+      alt='Italian Lemon Drop'
       borderRadius='lg'
     />
     <Stack mt='6' spacing='3'>
-      <Heading size='md'>Choclate Chip Cookies
+      <Heading size='md'>Italian Lemon Drop
       <br></br>(12 count)</Heading>
       <Text>
-      Indulge in Grandma&apos;s lovingly baked, classic chocolate chip cookies. Each bite oozing with chocolatey goodness.
+      Brighten your day with the zesty delight of Grandma&apos;s Italian Lemon Drop cookies. Refreshing lemon flavor in a soft, delightful cookie.
       </Text>
       <Text color='blue.600' fontSize='2xl'>
-        $10.99
+        $12.99
       </Text>
     </Stack>
   </CardBody>
@@ -50,4 +50,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </React.StrictMode>,
   )
 
- export default ChocChipCookies;
+ export default ItalianLemonDrop;

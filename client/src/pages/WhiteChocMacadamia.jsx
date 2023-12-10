@@ -13,23 +13,23 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 // import { addCookieId } from '../utils/localStorage';
 // TODO: END
 
-function NoBakeCookies(){
+function WhiteChocMacadamia(){
     return(
-<Card maxW='sm'>
+        <Card maxW='sm'>
   <CardBody>
     <Image
-      src='../../assets/noBakeCookies.png'
-      alt='No Bake Cookies'
+      src='../../assets/whiteChocMacadamia.jpeg'
+      alt='White Chocolate Macadamia Nut'
       borderRadius='lg'
     />
     <Stack mt='6' spacing='3'>
-      <Heading size='md'>No Bake Cookies 
-      <br></br>(One Dozen)</Heading>
+      <Heading size='md'>White Chocolate Macadamia Nut
+      <br></br>(12 count)</Heading>
       <Text>
-      Sometimes Grandma&apos;s like easy bake&apos;s too! Her secret recipe is complete with a special ingredient: love ❤️
+      Indulge in luxury with Grandma&apos;s White Chocolate Macadamia Nut cookies. Creamy white chocolate meets crunchy macadamia nuts for a divine experience.
       </Text>
       <Text color='blue.600' fontSize='2xl'>
-        $9.99
+        $13.99
       </Text>
     </Stack>
   </CardBody>
@@ -50,4 +50,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </React.StrictMode>,
   )
 
- export default NoBakeCookies;
+ export default WhiteChocMacadamia;
