@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import { ChakraProvider } from '@chakra-ui/react';
-// import { extendTheme } from '@chakra-ui/react';
-// import { Text } from '@chakra-ui/react';
-// import GrandmasPage from './pages/GrandmasPage.jsx';
-
-import App from './App.jsx';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-// import NavBarBoot from './components/NavBarBoot.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+// import App from './App.jsx';
+// import GrandmasPage from './pages/GrandmasPage.jsx';
+// import NavBarBoot from './components/NavBarBoot.jsx';
+import NavBarBoot from './components/NavBarBoot.jsx';
 
 /* 
 TODO: may need to be commented back in or deleted
@@ -32,8 +30,6 @@ TODO: END
 //   }
 // }
 
-// import SearchBooks from './pages/SearchBooks'
-// import SavedBooks from './pages/SavedBooks'
 
 //TODO: KEEP
 // const router = createBrowserRouter([
@@ -76,13 +72,7 @@ TODO: END
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
-    // children: [
-    //   {
-    //     path: 'login',
-    //     element: <Test />
-    //   }
-    // ]
+    element: <NavBarBoot />,
   }
 ])
 

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
 // import { loginUser } from '../utils/API';
-// import Auth from '../utils/auth';
+import AuthService from '../utils/auth';
 
 import { useMutation } from '@apollo/client';
 
@@ -25,7 +25,7 @@ const LoginFormBoot = () => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
-      event.stopPropagation();
+      // event.stopPropagation();
     }
 
     try {
@@ -37,7 +37,7 @@ const LoginFormBoot = () => {
 
       const { token, user } = await response.json();
       console.log(user);
-      Auth.login(token);
+      AuthService.login(token);
     } catch (err) {
       console.error(err);
       setShowAlert(true);
