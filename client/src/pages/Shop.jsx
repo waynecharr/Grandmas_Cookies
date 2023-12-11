@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom/client';
 import { Image, Center } from '@chakra-ui/react';
 import { Container } from '@chakra-ui/react';
 // import {Breadcrumb,BreadcrumbItem, BreadcrumbLink} from '@chakra-ui/react';
-import { Card, CardBody, CardFooter, Stack, Heading, Divider, Text } from '@chakra-ui/react';
+import { Card, CardBody, CardFooter, Stack, Heading, Divider, Text, SimpleGrid } from '@chakra-ui/react';
 import { Button, ButtonGroup } from '@chakra-ui/react';
 
 // export the component theme
@@ -39,8 +39,9 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 
         function Shop(){
             return(
-    <Container centerContent='true'>  
-    <Card padding='4' bg='pink.50' color='black' maxW='sm'>
+    // <Container centerContent='true'>  
+    <SimpleGrid spacing={6} templateColumns='repeat(auto-fill, minmax(345px, 1fr))'>
+    <Card padding='4' bg='pink.50' color='black' maxW='lg'>
     <CardBody>
             <Image
             src='../../assets/choclateChipCookies.jpeg'
@@ -68,7 +69,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
     </CardFooter>
     </Card>
 
-    <Card padding='4' bg='pink.50' color='black' maxW='sm'>
+    <Card padding='4' bg='pink.50' color='black' maxW='lg'>
     <CardBody>
         <Image
         src='../../assets/gingersnaps.jpeg'
@@ -96,7 +97,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
     </CardFooter>
     </Card>
 
-    <Card padding='4' bg='pink.50' color='black' maxW='sm'>
+    <Card padding='4' bg='pink.50' color='black' maxW='lg'>
     <CardBody>
         <Image
         src='../../assets/italianLemonDrop.jpeg'
@@ -124,7 +125,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
     </CardFooter>
     </Card>
 
-    <Card padding='4' bg='pink.50' color='black' maxW='sm'>
+    <Card padding='4' bg='pink.50' color='black' maxW='lg'>
         <CardBody>
             <Image
             src='../../assets/noBakeCookies.png'
@@ -152,7 +153,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
         </CardFooter>
         </Card>
 
-        <Card padding='4' bg='pink.50' color='black' maxW='sm'>
+        <Card padding='4' bg='pink.50' color='black' maxW='lg'>
         <CardBody>
             <Image
             src='../../assets/PBcookie.jpeg'
@@ -180,7 +181,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
         </CardFooter>
         </Card>
 
-        <Card padding='4' bg='pink.50' color='black' maxW='sm'>
+        <Card padding='4' bg='pink.50' color='black' maxW='lg'>
         <CardBody>
             <Image
             src='../../assets/shortbreadCookies.jpeg'
@@ -208,7 +209,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
         </CardFooter>
         </Card>
 
-        <Card padding='4' bg='pink.50' color='black' maxW='sm'>
+        <Card padding='4' bg='pink.50' color='black' maxW='lg'>
         <CardBody>
             <Image
             src='../../assets/snickerdoodles.jpeg'
@@ -236,7 +237,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
         </CardFooter>
         </Card>
 
-        <Card padding='4' bg='pink.50' color='black' maxW='sm'>
+        <Card padding='4' bg='pink.50' color='black' maxW='lg'>
         <CardBody>
             <Image
             src='../../assets/SugarCookies.jpeg'
@@ -264,7 +265,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
         </CardFooter>
         </Card>
 
-        <Card padding='4' bg='pink.50' color='black' maxW='sm'>
+        <Card padding='4' bg='pink.50' color='black' maxW='lg'>
         <CardBody>
             <Image
             src='../../assets/whiteChocMacadamia.jpeg'
@@ -292,7 +293,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
         </CardFooter>
         </Card>
 
-        <Card padding='4' bg='pink.50' color='black' maxW='sm'>
+        <Card padding='4' bg='pink.50' color='black' maxW='lg'>
         <CardBody>
             <Image
             src='../../assets/cookieBox.jpeg'
@@ -319,7 +320,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
             </ButtonGroup>
         </CardFooter>
         </Card>
-</Container>  
+</SimpleGrid>  
 
             )
         }

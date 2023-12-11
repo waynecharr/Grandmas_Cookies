@@ -41,6 +41,8 @@ function App() {
     <ChakraProvider>
       <div className = "App">
         <GrandmasPage/>
+        <br></br>
+        <br></br>
         <Shop/>
         {/* <NoBakeCookies/> 
         <ChocChipCookies/> 

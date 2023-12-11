@@ -5,3 +5,9 @@
 // import { DELETE_COOKIE } from '../utils/mutations';
 // import Auth from '../utils/auth';
 // import { deleteCookieId } from '../utils/localStorage';
+
+import React from 'react';
+// Insert CSS types here
+// import Auth from '../utils/auth';
+
+import ReactDOM from 'react-dom/client';
