@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom/client';
 import { Image, Center } from '@chakra-ui/react';
 import { Container } from '@chakra-ui/react';
 // import {Breadcrumb,BreadcrumbItem, BreadcrumbLink} from '@chakra-ui/react';
-import { Card, CardBody, CardFooter, Stack, Heading, Divider, Text, SimpleGrid } from '@chakra-ui/react';
+import { Card, CardBody, CardFooter, Stack, Heading, Divider, Text, SimpleGrid,} from '@chakra-ui/react';
 import { Button, ButtonGroup } from '@chakra-ui/react';
 
 // export the component theme
@@ -47,6 +47,8 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
             src='../../assets/choclateChipCookies.jpeg'
             alt='Choclate Chip Cookies'
             borderRadius='md'
+            boxSize='300px'
+            objectFit='cover'
             />
             <Stack mt='6' spacing='3'>
             <Heading size='md'>Choclate Chip Cookies
@@ -75,6 +77,8 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
         src='../../assets/gingersnaps.jpeg'
         alt='Gingersnaps'
         borderRadius='md'
+        boxSize='300px'
+        objectFit='cover'
         />
         <Stack mt='6' spacing='3'>
         <Heading size='md'>Gingersnaps
@@ -103,6 +107,8 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
         src='../../assets/italianLemonDrop.jpeg'
         alt='Italian Lemon Drop'
         borderRadius='md'
+        boxSize='300px'
+        objectFit='cover'
         />
         <Stack mt='6' spacing='3'>
         <Heading size='md'>Italian Lemon Drop
@@ -131,6 +137,8 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
             src='../../assets/noBakeCookies.png'
             alt='No Bake Cookies'
             borderRadius='md'
+            boxSize='300px'
+            objectFit='cover'
             />
             <Stack mt='6' spacing='3'>
             <Heading size='md'>No Bake Cookies 
@@ -159,6 +167,8 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
             src='../../assets/PBcookie.jpeg'
             alt='Peanut Butter Cookies'
             borderRadius='md'
+            boxSize='300px'
+            objectFit='cover'
             />
             <Stack mt='6' spacing='3'>
             <Heading size='md'>Peanut Butter Cookies
@@ -187,6 +197,8 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
             src='../../assets/shortbreadCookies.jpeg'
             alt='Shortbread Cookies'
             borderRadius='md'
+            boxSize='300px'
+            objectFit='cover'
             />
             <Stack mt='6' spacing='3'>
             <Heading size='md'>Shortbread Cookies
@@ -215,6 +227,8 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
             src='../../assets/snickerdoodles.jpeg'
             alt='Snickerdoodles'
             borderRadius='md'
+            boxSize='300px'
+            objectFit='cover'
             />
             <Stack mt='6' spacing='3'>
             <Heading size='md'>Choclate Chip Cookies
@@ -243,6 +257,8 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
             src='../../assets/SugarCookies.jpeg'
             alt='Sugar Cookies'
             borderRadius='md'
+            boxSize='300px'
+            objectFit='cover'
             />
             <Stack mt='6' spacing='3'>
             <Heading size='md'> Sugar Cookies
@@ -271,6 +287,8 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
             src='../../assets/whiteChocMacadamia.jpeg'
             alt='White Chocolate Macadamia Nut'
             borderRadius='md'
+            boxSize='300px'
+            objectFit='cover'
             />
             <Stack mt='6' spacing='3'>
             <Heading size='md'>White Chocolate Macadamia Nut
@@ -299,6 +317,8 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
             src='../../assets/cookieBox.jpeg'
             alt='Cookie Mystery Box'
             borderRadius='md'
+            boxSize='300px'
+            objectFit='cover'
             />
             <Stack mt='6' spacing='3'>
             <Heading size='md'>Grandma&apos;s Surprise Mystery Box⁉️
