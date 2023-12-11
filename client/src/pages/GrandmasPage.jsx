@@ -14,15 +14,26 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
   function GrandmasPage(){
     return (
+      <Center>
         <Container>
             <h1>Grandma&apos;s Cookies</h1>
               <br></br>
               <br></br>
-              <Breadcrumb fontWeight='medium' fontSize='sm'>
-                <BreadcrumbItem>
-                  <BreadcrumbLink href='#'>About Grandma</BreadcrumbLink>
-                </BreadcrumbItem>
-              </Breadcrumb>
+        <Center>
+          <Breadcrumb>
+          <BreadcrumbItem>
+            <BreadcrumbLink href='#'>About Grandma</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink href='#'>Shop</BreadcrumbLink>
+          </BreadcrumbItem>
+
+          <BreadcrumbItem>
+            <BreadcrumbLink href='#'>Checkout</BreadcrumbLink>
+          </BreadcrumbItem>
+        </Breadcrumb>
+        </Center>
               <br></br>
               <br></br>
             <Center>
@@ -48,6 +59,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               Grandma 
             </p>
         </Container>
+        </Center>
     )
 }
 

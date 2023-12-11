@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 // import { ChakraProvider } from '@chakra-ui/react';
 // import { extendTheme } from '@chakra-ui/react';
 // import { Text } from '@chakra-ui/react';
-import GrandmasPage from './pages/GrandmasPage.jsx';
+// import GrandmasPage from './pages/GrandmasPage.jsx';
 
 import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import NavBarBoot from './components/NavBarBoot.jsx';
+// import NavBarBoot from './components/NavBarBoot.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* 
@@ -35,26 +35,30 @@ TODO: END
 // import SearchBooks from './pages/SearchBooks'
 // import SavedBooks from './pages/SavedBooks'
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <NavBarBoot />,
-    errorElement: <h1 className='display-2'>Wrong page!</h1>,
-    children: [
-      {
-        index: true,
-        element: <GrandmasPage />
-      }, {
-        path: '/GrandmasPage',
-        element: <GrandmasPage />
-      }
-    ]
-  }
-])
+//TODO: KEEP
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <App />,
+//     errorElement: <h1 className='display-2'>Wrong page!</h1>,
+//   //   children: [
+//   //     {
+//   //       index: true,
+//   //       element: <GrandmasPage />
+//   //     }, {
+//   //       path: '/GrandmasPage',
+//   //       element: <GrandmasPage />
+//   //     }
+//   //   ]
+//   }
+// ])
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
-)
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//   <RouterProvider router={router} />
+// )
+//TODO: KEEP
+
+
 
 // const theme = extendTheme({ colors })
 
@@ -69,22 +73,21 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 //   </React.StrictMode>,
 // )
 
-// const router = createBrowserRouter([
-//   {
-//     path: '/',
-//     element: <App />,
-//     errorElement: <Text fontSize="250" position="absolute" top="100%" right="50%">It seems you're lost!</Text>,
-//     children: [
-//       {
-//         path: 'login',
-//         element: <Test />
-//       }
-//     ]
-//   }
-// ])
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    // children: [
+    //   {
+    //     path: 'login',
+    //     element: <Test />
+    //   }
+    // ]
+  }
+])
 
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <RouterProvider router={router} />
-// )
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <RouterProvider router={router} />
+)
 
 
