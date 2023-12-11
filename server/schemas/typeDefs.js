@@ -4,6 +4,7 @@ const typeDefs = gql`
 
     type User {
         _id: ID!
+        username: String
         email: String
         password: String
         cartTotal: Int
@@ -25,7 +26,7 @@ const typeDefs = gql`
     }
 
     type Mutation {
-        addUser(email: String!, password: String!): Auth
+        addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
         addCookie(addToCart: BuyCookie!): User
         deleteCookie(cookieId: ID!): User
