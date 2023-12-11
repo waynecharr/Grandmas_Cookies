@@ -28,7 +28,6 @@ export const getMe = (token) => {
     });
   };
   
-  // save book data for a logged in user
   export const saveCookie = (cookieData, token) => {
     return fetch('/api/users', {
       method: 'PUT',
@@ -40,7 +39,6 @@ export const getMe = (token) => {
     });
   };
   
-  // remove saved book data for a logged in user
   export const deleteCookie = (cookieId, token) => {
     return fetch(`/api/users/cookies/${cookieId}`, {
       method: 'DELETE',

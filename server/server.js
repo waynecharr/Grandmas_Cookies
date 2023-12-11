@@ -4,6 +4,7 @@ const { ApolloServer } = require('@apollo/server');
 const { expressMiddleware } = require('@apollo/server/express4');
 const { authMiddleware } = require('./utils/auth');
 
+
 // import our typeDefs and resolvers
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
@@ -53,9 +54,6 @@ const startServer = async (typeDefs, resolvers) => {
 startServer().catch((error) => {
   console.error('Error starting the server:', error);
 });
-
-
-
 
 // app.use(express.urlencoded({ extended: true }));
 // app.use(express.json());

@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ChakraProvider } from '@chakra-ui/react';
-import { extendTheme } from '@chakra-ui/react';
+// import { ChakraProvider } from '@chakra-ui/react';
+// import { extendTheme } from '@chakra-ui/react';
+// import { Text } from '@chakra-ui/react';
+import GrandmasPage from './pages/GrandmasPage.jsx';
+
 import App from './App.jsx';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import NavBarBoot from './components/NavBarBoot.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* 
 TODO: may need to be commented back in or deleted
@@ -15,47 +21,32 @@ TODO: END
 */
 
 // Following extendedTheme function per https://chakra-ui.com/getting-started/vite-guide
-const colors = {
-  brand: {
-    // Pink
-    100: '#ff85f3',
-    // White
-    200: '#fff',
-    // Yellow
-    300: '#fcff9e',
-  }
-}
+// const colors = {
+//   brand: {
+//     // Pink
+//     100: '#ff85f3',
+//     // White
+//     200: '#fff',
+//     // Yellow
+//     300: '#fcff9e',
+//   }
+// }
 
-const theme = extendTheme({ colors })
+// import SearchBooks from './pages/SearchBooks'
+// import SavedBooks from './pages/SavedBooks'
 
-const rootElement = document.getElementById('root')
-ReactDOM.createRoot(rootElement).render(
-  <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <App />
-    </ChakraProvider>
-  </React.StrictMode>,
-)
-
-/* 
-TODO: may need to be commented back in or deleted
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
-    errorElement: <Text fontSize="250" position="absolute" top="100%" right="50%">It seems you're lost!</Text>,
+    element: <NavBarBoot />,
+    errorElement: <h1 className='display-2'>Wrong page!</h1>,
     children: [
       {
         index: true,
         element: <GrandmasPage />
-      },
-      {
-        path: '/shop',
-        element: <AvailableCookies />
-      },
-      {
-        path: '/checkout',
-        element: <CheckoutCart />
+      }, {
+        path: '/GrandmasPage',
+        element: <GrandmasPage />
       }
     ]
   }
@@ -64,5 +55,36 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 )
-TODO: END
-*/
+
+// const theme = extendTheme({ colors })
+
+// const rootElement = document.getElementById('root')
+// ReactDOM.createRoot(rootElement).render(
+//   <React.StrictMode>
+//     <ChakraProvider theme={theme}>
+//       {/* <App /> */}
+//       <LoginFormBoot />
+
+//     </ChakraProvider>
+//   </React.StrictMode>,
+// )
+
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <App />,
+//     errorElement: <Text fontSize="250" position="absolute" top="100%" right="50%">It seems you're lost!</Text>,
+//     children: [
+//       {
+//         path: 'login',
+//         element: <Test />
+//       }
+//     ]
+//   }
+// ])
+
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//   <RouterProvider router={router} />
+// )
+
+
