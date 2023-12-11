@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { Card, CardBody, CardFooter, Stack, Heading, Divider, Text } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react';
 import { Button, ButtonGroup } from '@chakra-ui/react';
@@ -44,10 +42,5 @@ function NoBakeCookies(){
 </Card>
     )
 }
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
-    </React.StrictMode>,
-  )
 
  export default NoBakeCookies;

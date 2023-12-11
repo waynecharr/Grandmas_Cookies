@@ -1,18 +1,10 @@
 import { useState } from 'react';
-
-// Form Control info here: https://chakra-ui.com/docs/components/form-control/usage
-import { Button } from '@chakra-ui/react';
-import {
-  FormControl,
-  FormLabel,
-  FormErrorMessage,
-  FormHelperText,
-} from '@chakra-ui/react'
+import { Form, Button, Alert } from 'react-bootstrap';
 
 import { createUser } from '../utils/API';
 import Auth from '../utils/auth';
 
-const SignupForm = () => {
+const SignupFormBoot = () => {
   // set initial form state
   const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
   // set state for form validation
@@ -60,15 +52,15 @@ const SignupForm = () => {
   return (
     <>
       {/* This is needed for the validation functionality above */}
-      <FormControl noValidate validated={validated} onSubmit={handleFormSubmit}>
+      <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
         {/* show alert if server response is bad */}
-        <FormErrorMessage dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
+        <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
           Something went wrong with your signup!
-        </FormErrorMessage>
+        </Alert>
 
-        <FormControl.Group className='mb-3'>
-          <FormLabel htmlFor='username'>Username</FormLabel>
-          <FormControl
+        <Form.Group className='mb-3'>
+          <Form.Label htmlFor='username'>Username</Form.Label>
+          <Form.Control
             type='text'
             placeholder='Your username'
             name='username'
@@ -76,12 +68,12 @@ const SignupForm = () => {
             value={userFormData.username}
             required
           />
-          <FormErrorMessage type='invalid'>Username is required!</FormErrorMessage>
-        </FormControl.Group>
+          <Form.Control.Feedback type='invalid'>Username is required!</Form.Control.Feedback>
+        </Form.Group>
 
-        <FormControl className='mb-3'>
-          <FormLabel htmlFor='email'>Email</FormLabel>
-          <FormControl
+        <Form.Group className='mb-3'>
+          <Form.Label htmlFor='email'>Email</Form.Label>
+          <Form.Control
             type='email'
             placeholder='Your email address'
             name='email'
@@ -89,13 +81,12 @@ const SignupForm = () => {
             value={userFormData.email}
             required
           />
-            <FormHelperText>We`&apos;`ll never share your email.</FormHelperText>
-          <FormErrorMessage type='invalid'>Email is required!</FormErrorMessage>
-        </FormControl>
+          <Form.Control.Feedback type='invalid'>Email is required!</Form.Control.Feedback>
+        </Form.Group>
 
-        <FormControl className='mb-3'>
-          <FormLabel htmlFor='password'>Password</FormLabel>
-          <FormControl
+        <Form.Group className='mb-3'>
+          <Form.Label htmlFor='password'>Password</Form.Label>
+          <Form.Control
             type='password'
             placeholder='Your password'
             name='password'
@@ -103,17 +94,17 @@ const SignupForm = () => {
             value={userFormData.password}
             required
           />
-          <FormErrorMessage type='invalid'>Password is required!</FormErrorMessage>
-        </FormControl>
+          <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
+        </Form.Group>
         <Button
           disabled={!(userFormData.username && userFormData.email && userFormData.password)}
           type='submit'
           variant='success'>
           Submit
         </Button>
-      </FormControl>
+      </Form>
     </>
   );
 };
 
-export default SignupForm;
+export default SignupFormBoot;
