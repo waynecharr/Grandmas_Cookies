@@ -1,9 +1,11 @@
 import './App.css';
 // import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
+import { ApolloClient, ApolloProvider } from '@apollo/client';
 import GrandmasPage from './pages/GrandmasPage';
 import { ChakraProvider } from '@chakra-ui/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Router, Routes, Route } from 'react-router-dom';
 
 // Cookie Imports
 import NoBakeCookies from './pages/NoBakeCookies';
@@ -16,11 +18,6 @@ import WhiteChocMacadamia from './pages/WhiteChocMacadamia';
 import ItalianLemonDrop from './pages/ItalianLemonDrop';
 import SugarCookies from './pages/SugarCookies';
 import MysteryBox from './pages/MysteryBox';
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-  </React.StrictMode>,
-)
 
 /*
 TODO: may need to be commented back in or deleted
@@ -40,7 +37,6 @@ TODO: END
 function App() {
   return (
     <ChakraProvider>
-      {/* <ApolloClient client={client}> */}
       <div className = "App">
         <GrandmasPage/>
         <NoBakeCookies/>
@@ -53,12 +49,8 @@ function App() {
         <ItalianLemonDrop/>
         <SugarCookies/>
         <MysteryBox/>
-
       </div>
-      {/* </ApolloClient> */}
     </ChakraProvider>
-    
-
   )
 }
 
