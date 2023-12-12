@@ -8,6 +8,11 @@ import { Image } from '@chakra-ui/react';
 import { Card, CardBody, CardFooter, Stack, Heading, Divider, Text, SimpleGrid,} from '@chakra-ui/react';
 import { Button, ButtonGroup } from '@chakra-ui/react';
 
+const handleClick = (item) => {
+    if (cart.indexOf(item) !== -1) return;
+    setCart([...cart, item]);
+  };
+
 // export the component theme
 
         // function BreadCrumbItems(){
