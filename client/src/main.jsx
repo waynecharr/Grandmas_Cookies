@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx';
 import GrandmasPage from './pages/GrandmasPage.jsx';
 import Shop from './pages/Shop.jsx';
+import CheckOutCart from './pages/CheckoutCart.jsx'
 
 
 
@@ -18,10 +19,19 @@ const router = createBrowserRouter([
         index: true,
         element: <GrandmasPage />
       },
+      {
+        path: '/grandmaspage',
+        element: <GrandmasPage />
+      },
        {
         path: '/shop',
         element: <Shop />
+      },
+      {
+        path: '/checkout',
+        element: <CheckOutCart />
       }
+      
     ]
   },
 ]);

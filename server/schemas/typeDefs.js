@@ -7,8 +7,7 @@ const typeDefs = gql`
         username: String
         email: String
         password: String
-        cartTotal: Int
-        addCookie: [Cookies]
+        cookiesInCart: [ID]
     }
 
     type Query {
@@ -17,19 +16,9 @@ const typeDefs = gql`
         me: User
     }
 
-    input BuyCookie {
-        cookieId: String
-        cookieName: String
-        description: String
-        image: String
-        price: Float
-    }
-
-    type Mutation {
-        addUser(username: String!, email: String!, password: String!): Auth
-        login(email: String!, password: String!): Auth
-        addCookie(addToCart: BuyCookie!): User
-        deleteCookie(cookieId: ID!): User
+    input addCookieToCart {
+        user: ID
+        cookieId: ID
     }
 
     type Cookies {
@@ -44,6 +33,13 @@ const typeDefs = gql`
     type Auth {
         token: ID!
         user: User
+    }
+
+    type Mutation {
+        addUser(username: String!, email: String!, password: String!): Auth
+        login(email: String!, password: String!): Auth
+        addCookie(addToCart: addCookieToCart!): User
+        deleteCookie(cookieId: ID!): User
     }
 `;
 

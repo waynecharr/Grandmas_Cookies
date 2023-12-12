@@ -40,9 +40,9 @@ const resolvers = {
             if (context.user) {
                 const userCart = await User.findOneAndUpdate(
                     { _id: context.user._id },
-                    { $push: { addCookie: addToCart }},
+                    { $push: { cookiesInCart: addToCart.cookieId }},
                     { new: true }
-                )
+                );
                 return userCart;
             }
         },
