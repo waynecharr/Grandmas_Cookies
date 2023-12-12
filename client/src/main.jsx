@@ -3,18 +3,33 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx';
+import GrandmasPage from './pages/GrandmasPage.jsx';
+import Shop from './pages/Shop.jsx';
+
 
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
-  }
-])
+    errorElement: <div> Error </div>,
+    children: [
+      {
+        index: true,
+        element: <GrandmasPage />
+      },
+       {
+        path: '/shop',
+        element: <Shop />
+      }
+    ]
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 )
+
 
 
 /* 

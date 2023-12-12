@@ -6,8 +6,8 @@
 // import Auth from '../utils/auth';
 // import { deleteCookieId } from '../utils/localStorage';
 
-import React from 'react';
+// import React from 'react';
 // Insert CSS types here
 // import Auth from '../utils/auth';
 
-import ReactDOM from 'react-dom/client';
+// import ReactDOM from 'react-dom/client';

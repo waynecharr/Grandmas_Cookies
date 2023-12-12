@@ -1,11 +1,12 @@
 import React from 'react';
-// Insert CSS types here
-// import Auth from '../utils/auth';
-
+import Auth from '../utils/auth';
 import ReactDOM from 'react-dom/client';
 import { Image, Center } from '@chakra-ui/react';
 import { Container } from '@chakra-ui/react';
 import {Breadcrumb,BreadcrumbItem, BreadcrumbLink} from '@chakra-ui/react';
+
+
+Auth.loggedIn
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
@@ -26,11 +27,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href='#'>Shop</BreadcrumbLink>
+            <BreadcrumbLink href='/shop'>Shop</BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href='#'>Checkout</BreadcrumbLink>
+            <BreadcrumbLink href='/checkout'>Checkout</BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
         </Center>
