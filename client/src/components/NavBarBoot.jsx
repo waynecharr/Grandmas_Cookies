@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
 import SignUpFormBoot from './SignupFormBoot';
 import LoginFormBoot from './LoginFormBoot';
@@ -10,6 +10,7 @@ const NavBarBoot = () => {
   // set modal display state
   const [showModal, setShowModal] = useState(false);
 
+ //TODO: Look at navigation?
   return (
     <>
       <Navbar bg='white' variant='white' expand='lg'>

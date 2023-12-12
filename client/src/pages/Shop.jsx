@@ -1,10 +1,9 @@
-import React from 'react';
+// import React from 'react';
 // Insert CSS types here
 // import Auth from '../utils/auth';
 
-import ReactDOM from 'react-dom/client';
-import { Image, Center } from '@chakra-ui/react';
-import { Container } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
+// import { Container } from '@chakra-ui/react';
 // import {Breadcrumb,BreadcrumbItem, BreadcrumbLink} from '@chakra-ui/react';
 import { Card, CardBody, CardFooter, Stack, Heading, Divider, Text, SimpleGrid,} from '@chakra-ui/react';
 import { Button, ButtonGroup } from '@chakra-ui/react';
@@ -39,7 +38,6 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
 
         function Shop(){
             return(
-    // <Container centerContent='true'>  
     <SimpleGrid spacing={6} templateColumns='repeat(auto-fill, minmax(345px, 1fr))'>
     <Card padding='4' bg='pink.50' color='black' maxW='lg'>
     <CardBody>
@@ -342,7 +340,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react';
         </Card>
 </SimpleGrid>  
 
-            )
-        }
+    )
+}
 
 export default Shop;
